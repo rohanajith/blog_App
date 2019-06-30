@@ -1,0 +1,13 @@
+.img-responsive{
+	height: 200px;
+	width : auto;
+}
+.fa-pencil-square-o{
+  color: black;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+.fa-trash{
+	color: red;
+}
+

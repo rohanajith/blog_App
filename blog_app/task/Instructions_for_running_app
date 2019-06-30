@@ -1,0 +1,15 @@
+1) Open 2 terminals- One for running react(frontend) and other for node.js(backend)
+2) react runs at localhost:3000 and node.js runs at localhost 8000
+3) go to '/blog_app' and use 'npm install' to download node modules for the dependencies in the backend.
+4) go to 'blog_app/task/' and use 'npm install' to download node modules for dependecies in the frontend.
+5)
+	blog_app/task/
+		/src
+			--pages - all the pages in the app
+			--components - styling for different pages
+
+6) MySql database is used. A one-many relationship is used to depict the relationship between blogposts and comments
+	database name : 'work'
+	tables to be created : blogposts,comments
+	create table blogposts using the command - 'CREATE TABLE blogposts(blogid int not null auto_increment,title longtext,imglink longtext,description longtext,PRIMARY KEY(blogid))' 
+	create table comments using the command - ' CREATE TABLE comments(cid int not null auto_increment,name varchar(255),comment longtext,blogid int,primary key(cid),FOREIGN KEY(blogid) REFERENCES blogposts(blogid))'  
